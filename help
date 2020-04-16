@@ -1,0 +1,13 @@
+
+php artisan ide-helper:generate
+php artisan ide-helper:models
+php artisan ide-helper:meta
+
+cd domains/wcrm58b
+php artisan websockets:serve
+php artisan contractsCollector:start
+
+php artisan forteParser:start 1
+php artisan forteParser:start 2
+
+$tmpDir = 'd:\ospanel\userdata\temp';

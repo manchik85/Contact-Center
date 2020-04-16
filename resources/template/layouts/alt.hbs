@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{{> include/_copyright-header}}
+<html lang="en">
+	<head>
+		{{> include/_head}}
+
+		<!-- Optional: page related CSS-->
+		{{#>head-block}}{{/head-block}}
+	</head>
+	<body>
+			
+		<!-- BEGIN Page Wrapper -->
+		<div class="page-wrapper alt">
+
+			<!-- BEGIN Page Content --> 
+			<!-- the #js-page-content id is needed for some plugins to initialize -->
+			<main id="js-page-content" role="main" class="page-content">
+				{{#>content-block}}{{/content-block}}
+			</main>
+			<!-- END Page Content -->
+
+			<!-- BEGIN Page Footer -->
+			{{> include/_page-footer }}
+			<!-- END Page Footer -->
+
+		</div>
+		<!-- END Page Wrapper -->
+
+		<!-- BEGIN Quick Menu -->
+		{{> include/_shortcut-menu }}
+		<!-- END Quick Menu -->
+
+		{{!-- Google Analytics  code if GOOGLE_ANALYTICS_ID id available --}}
+		{{#if GOOGLE_ANALYTICS_ID}}
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', '{{GOOGLE_ANALYTICS_ID}}', 'auto');
+			  ga('send', 'pageview');
+
+			</script>
+		{{/if}}
+		{{> include/_scripts-base-plugins}}
+		{{#>scripts-block}}
+			{{!-- Custom scripts per page can be added. --}}
+		{{/scripts-block}}
+	</body>
+</html>

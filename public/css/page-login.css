@@ -1,0 +1,46 @@
+
+
+html body .blankpage-form-field {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    width: 320px;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+html body video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url("../img/clouds.png") no-repeat;
+    background-size: cover;
+    -webkit-transition: 1s opacity;
+    transition: 1s opacity;
+}
+
+.alert {
+    margin: 0;
+    padding: 0.5em 1.25rem;
+}
+
+@media screen and (max-device-width: 800px) {
+    html body html {
+        background: url("../img/clouds.png") #FFF no-repeat center center fixed;
+    }
+
+    html body #bgvid {
+        display: none;
+    }
+}
+
+/*# sourceMappingURL=page-login.css.map */

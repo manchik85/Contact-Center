@@ -1,0 +1,244 @@
+/* #GLOBAL IMPORTS
+========================================================================== */
+@import '_imports/_global-import';
+
+/* #FRAMEWORK - Structure and layout files. (**DO NOT** change order)
+                DOC: you can disable unused _modules
+========================================================================== */
+/* contains root variables to be used with css (see docs) */
+@import '_modules/_root';
+/* resets DOM elements to its natural state */
+@import '_modules/_reset';
+/* html and body base styles */
+@import '_modules/_body';
+/* app header */
+@import '_modules/_page-header';
+/* app logo */
+@import '_modules/_page-logo';
+/* app search */
+@import '_modules/_page-search';
+
+/* icon menu with user options */
+@import '_modules/_dropdown-icon-menu';
+/* dropdown notification in the app header */
+@import '_modules/_dropdown-notification';
+/* icon menu with stacked icons located in the app header */
+@import '_modules/_dropdown-app-list';
+/* app header stays fixed */
+@import '_modules/_header-function-fixed';
+/* app far left panel */
+@import '_modules/_left-panel';
+/* app navigation */
+@import '_modules/_nav';
+/* app navigation filter */
+@import '_modules/_nav-listfilter';
+/* app info card inside navigation */
+@import '_modules/_nav-info-card';
+/* app navigation made horizontal */
+@import '_modules/_nav-function-top';
+/* app navgation stays hidden */
+@import '_modules/_nav-function-hidden';
+/* app navigation stays fixed */
+@import '_modules/_nav-function-fixed';
+/* app navigation stays minified */
+@import '_modules/_nav-function-minify';
+/* app navigation footer */
+@import '_modules/_nav-footer';
+/* app wrapper */
+@import '_modules/_page-wrapper';
+/* app content heading */
+@import '_modules/_page-heading';
+/* app content */
+@import '_modules/_page-content';
+/* app footer */
+@import '_modules/_page-footer';
+/* app error page */
+@import '_modules/_page-error';
+/* various app components (see docs for the full list) */
+@import '_modules/_page-components-dropdowns';
+@import '_modules/_page-components-tables';
+@import '_modules/_page-components-buttons';
+@import '_modules/_page-components-panels';
+@import '_modules/_page-components-badge';
+
+/* #MISC - misc styles, helpers, effects and hacks
+========================================================================== */
+@import '_modules/_helpers';
+@import '_modules/_misc';
+@import '_modules/_effects';
+@import '_modules/_hack';
+@import '_modules/_hack-ie';
+
+/* #MOBILE - mobile media related styles
+========================================================================== */
+/* contains most of the responsive styles for the app */
+@import '_modules/_responsive';
+/* changes content colors based on ambience light source of the user (experimental) */
+@import '_modules/_light-levels';
+
+/* #FORMS (customized bootstrap form elems)
+========================================================================== */
+@import '_modules/_forms';
+
+/* #COMPONENTS (can be removed but may or may not impact other components)
+========================================================================== */
+/*@import '_modules/_form-switches';*/
+//@import '_modules/_translate-3d';
+
+/* #DEMO ELEMS - elements mostly used for demo (can be removed)
+========================================================================== */
+//@import '_modules/_settings-*';
+@import '_modules/_demo-only';
+
+/* #_extensions - Components imported in alphabetical order (remove extensions from directory if not needed)
+========================================================================== */
+//@import '_extensions/_extension-*.scss';
+
+/* #_plugins - Components imported in alphabetical order (remove plugins from directory if not needed)
+========================================================================== */
+/*@import '_plugins/_plugin-*.scss';*/
+
+/* #ANIMATION - CSS animations and keyframes
+========================================================================== */
+//@import '_modules/_keyframes-*';
+
+/* #MODS - Layout manipulation
+========================================================================== */
+//@import '_modules/_mod-*.scss';
+
+/* #COLORS - we place this here so it can override other colors as needed
+========================================================================== */
+@import '_modules/_colors';
+
+/* #APP related modules (print, fullscreen, etc)
+========================================================================== */
+//@import '_modules/_app-*';
+
+/* #OVERRIDE - You can override any of the variables through this file
+========================================================================== */
+@import '_modules/_overrides';
+
+
+
+.no_br {
+  white-space: nowrap !important;
+}
+
+.a_c {
+  text-align: center;
+}
+.a_r {
+  text-align: right;
+}
+
+.alert {
+  padding: .5rem 1.25rem;
+  margin-bottom: 0;
+}
+
+.pad_0 {
+  padding: 0 !important;
+}
+.pad_0_10 {
+  padding: 0 10px;
+}
+.pad_0_20 {
+  padding: 0 20px;
+}
+
+.pad_3 {
+  padding: 3px;
+}
+
+.pad_5 {
+  padding: 5px;
+}
+
+.pad_10 {
+  padding: 10px;
+}
+
+.pad_10_20 {
+  padding: 10px 20px;
+}
+
+.px_1 {
+  padding: 1px;
+}
+
+.px_5 {
+  padding: 5px;
+}
+.px_7 {
+  padding: 7px;
+}
+
+.px_10 {
+  height: 10px;
+}
+
+.no-br {
+  white-space: nowrap;
+}
+
+
+.fl_l {
+  float: left;
+}
+
+
+.chrome.modal-open {
+  padding-right: 0 !important;
+}
+
+.modal-title {
+  line-height: 2;
+  font-size: 1.35rem;
+}
+
+.red {
+  color: red;
+}
+
+.cur_p {
+  cursor: pointer !important;
+}
+
+.custom-file-input {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  z-index: 2;
+  width: 100%;
+  height: calc(1.47em + 1rem + 2px);
+  margin: 0;
+  opacity: 1;
+}
+
+.custom-file-label::after {
+  padding: 0;
+  content: "";
+  opacity: 0;
+}
+
+.pieLabel > div {
+  color: #000 !important;
+  font-size: .85rem !important;
+  text-shadow: 0 0 0 #000, 0 0 2px #fff;
+}
+
+.disp_n {
+  display: none;
+}
+
+
+
+.page-sidebar {
+  z-index: 1000;
+}
+
+//.page-logo {
+//
+//  background-color: #fff;
+//  background-image: none;
+//}

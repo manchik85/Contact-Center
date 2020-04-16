@@ -1,0 +1,44 @@
+{
+  "name": "pug-php/pug-assets",
+  "description": "Pug template assets manager",
+  "type": "library",
+  "require": {
+    "pug-php/pug": "^2.0.0 || ^3.0.0",
+    "pug-php/pug-minify": "^1.0.1",
+    "pug-php/pug-filter-coffee-script": "^1.2",
+    "pug-php/pug-filter-less": "^1.0",
+    "pug-php/pug-filter-markdown": "^1.1",
+    "pug-php/pug-filter-react": "^1.0",
+    "pug-php/pug-filter-stylus": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=4.8 <6.0",
+    "codeclimate/php-test-reporter": "^0.4.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kyle Katarn",
+      "email": "kylekatarnls@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-0": {
+      "Pug": "src/"
+    }
+  },
+  "extra": {
+    "npm-confirm": {
+      "less": "It allows you to use less filter and link less files inside minify/concat tags.",
+      "clean-css": "It allows you to use minify option on CSS files and contents (recommended in production).",
+      "stylus": "It allows you to use stylus filter and link stylus files inside minify/concat tags.",
+      "coffee-script": "It allows you to use coffee-script filter and coffee-script files inside minify/concat tags.",
+      "babel-cli": "It allows you to use react/jsx filter and react/jsx files inside minify/concat tags.",
+      "babel-plugin-transform-react-jsx": "It allows you to use react/jsx filter and react/jsx files inside minify/concat tags.",
+      "babel-preset-es2015": "It allows you to use react/jsx filter and react/jsx files inside minify/concat tags.",
+      "babel-preset-react": "It allows you to use react/jsx filter and react/jsx files inside minify/concat tags.",
+      "uglify-js": "It allows you to use minify option on JS files and contents (recommended in production)."
+    }
+  }
+}
